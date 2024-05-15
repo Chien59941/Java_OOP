@@ -14,6 +14,5 @@ public class MainClass {
         sep.xuatThongTin();
         linh1.xuatThongTin();
         linh2.xuatThongTin();
-        thoivu.xuatThongTin();
-    }
+        thoivu.xuatThongTin();}
 }

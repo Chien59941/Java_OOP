@@ -19,12 +19,12 @@ public class NhanVienFullTime extends NhanVien {
         if (loaiChucVu == 1) 
             return "Sep";
         else
-            return "Nhan vien toan thoi gian";
-    }
+            return "Nhan vien toan thoi gian";}
     public void tinhLuong()
     {   if(loaiChucVu == 1)
             luong = Configs.LUONG_NHAN_VIEN_SEP;
         else
             luong = Configs.LUONG_NHAN_VIEN_FULL_TIME_LINH + Configs.LUONG_LAM_THEM_MOI_NGAY*ngayLamThem;
     }
+
 }
