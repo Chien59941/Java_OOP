@@ -22,17 +22,21 @@ public class Bai1 {
         }
         
         System.out.println("Phan tu lon nhat = " + max);
-        System.out.println("Nhap so nguyen bat ky");
-        int x = sc.nextInt();
-        for(int y=0; y < arrInt.size(); y++){
-            if(arrInt.get(y) == x)
-                arrInt.remove(y);
-        }
+        int y;
+        System.out.println("nhap phan tu can xoa: ");
+        y = sc.nextInt();
+        for (int i = arrInt.size()-1; i >=0; i--) {
+            if(y == arrInt.get(i))
+            {
+                arrInt.remove(i);
+                System.out.println("xoa thanh cong!!!!!!!!!!");                
+            }
         sc.close();
         arrInt.sort(Comparator.comparingInt( o -> o));
-        System.out.println("Cac phan tu co trong day la ");
+        System.out.println("Cac phan tu co trong yay la ");
         for(int ix = 0;ix < arrInt.size();ix++)
         {   System.out.println("Phan tu thu " + ix + ": "+ arrInt.get(ix));
         }
+    }
     }
 }
