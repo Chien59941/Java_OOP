@@ -11,8 +11,7 @@ public class Bai2 {
         {
             System.out.println("Nhap phan tu thu " + i + ": " );
             number = sc.nextInt();
-            link.add(number);
-        }
+            link.add(number);}
         sc.close();
         for(int i1 = 0; i1 < link.size(); i1++)
         {

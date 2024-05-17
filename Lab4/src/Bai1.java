@@ -33,7 +33,7 @@ public class Bai1 {
             }
         sc.close();
         arrInt.sort(Comparator.comparingInt( o -> o));
-        System.out.println("Cac phan tu co trong yay la ");
+        System.out.println("Cac phan tu co trong day la ");
         for(int ix = 0;ix < arrInt.size();ix++)
         {   System.out.println("Phan tu thu " + ix + ": "+ arrInt.get(ix));
         }
