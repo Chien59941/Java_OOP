@@ -12,6 +12,5 @@ public class entry {
         map1.put("Java ", " Java");
         Set<Map.Entry<String, String>> set1 = map1.entrySet();
         System.out.println("Cac entry trong set: ");
-        System.out.println(set1);  
-    }
+        System.out.println(set1);}
 }
