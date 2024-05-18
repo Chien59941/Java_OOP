@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Bai3 {
@@ -24,22 +23,16 @@ public class Bai3 {
             sinhviens.add(i, sv);
             i=i+1;
         }
-
-        
         for( int c = 0;c < sinhviens.size(); c++)
-        {
-            if(sinhviens.get(c).diem <= 5)
+        {   if(sinhviens.get(c).diem <= 5)
                 dem = dem +1;
         }
         System.out.println("So sinh vien thi lai la " + dem);
         System.out.println("Nhung sinh vien thi lai");
         for( int b = 0;b < sinhviens.size(); b++)
-        {
-            if(sinhviens.get(b).diem <= 5)
+        {   if(sinhviens.get(b).diem <= 5)
                 sinhviens.get(b).InThongTin();
         }
-
-
         int max = 0;
         for(int d=1; d<sinhviens.size(); d++)
         {   if(sinhviens.get(max).diem < sinhviens.get(d).diem )
@@ -47,18 +40,13 @@ public class Bai3 {
             if(sinhviens.get(max).diem == sinhviens.get(d).diem )
                 sinhviens.get(d).InThongTin();
         }
-        sinhviens.get(max).InThongTin();
-        
+        sinhviens.get(max).InThongTin();        
         sc.nextLine();
         System.out.print("nhap gia tri can tim: ");
         String name  = sc.nextLine();
         for(int f = 0; f < sinhviens.size(); f++ )
-        {
-            if(sinhviens.get(f).ten.equals(name))
-                {
-                    sinhviens.get(f).InThongTin();
-                }
+        {   if(sinhviens.get(f).ten.equals(name))
+                sinhviens.get(f).InThongTin();
         }
     }
 }
-
